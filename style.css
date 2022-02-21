@@ -1,0 +1,58 @@
+body {
+    background: url("assets/world.png") no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+h1 {
+    color: gray;
+    flex-wrap: wrap;
+    font-size: 40px;
+    min-width: 500px;
+    text-align: center;
+}
+
+.container {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    width: 630px;
+}
+
+.card {
+    height: 200px;
+    margin-top: 20px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: 2s ease;
+    width: 200px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    align-items: center;
+    border-radius: 20%;
+    backface-visibility: hidden;
+    color: #FCA859;
+    display: flex;
+    font: 30px bold;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.front {
+    background: #F9EFE5;
+}
+
+.back {
+    background: #F07504;
+    color: white;
+    transform: rotateY(180deg);
+}
